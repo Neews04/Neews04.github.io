@@ -1,0 +1,331 @@
+html {
+	box-sizing: border-box;
+	font-family: 'Raleway', serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f2f2f1;
+	margin: 0;
+}
+
+h1 {
+	font-size: 28px;
+	padding-right: 31rem;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 10vh;
+	background-color: #f2f2f1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+	transition: background-color, 0.3s ease;
+}
+
+nav {
+	width: 50%;
+	height: 50px;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+}
+
+#leaf-icon {
+	font-size: 1.8rem;
+	margin-left: 5rem;
+}
+
+.underline-text {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.underline-bold-text {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.nav-element-link {
+	text-decoration: none;
+	color: #000000;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+header:hover {
+	background-color: rgba(217, 217, 217, 0.85);
+	cursor: pointer;
+}
+
+.nav-element-link:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.main-image-container {
+	margin: auto;
+	width: 900px;
+	height: 475px;
+	justify-content: center;
+}
+
+.main-image {
+	display: flex;
+	width: 650px;
+	margin: 6rem auto 2rem auto;
+}
+
+.main-image-text {
+	text-align: center;
+	line-height: 1.5;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	margin: 1em auto;
+	width: 70vw;
+	height: 8400px;
+	background-color: white;
+}
+
+.introduction {
+	width: 60%;
+	margin: 4em auto 6em auto;
+	padding-bottom: 2em;
+	border-bottom: 1px solid slategray;
+}
+
+.content-text {
+	line-height: 2.0;
+}
+
+#descriptions {
+	position: relative;
+	top: -2.5em;
+}
+
+.plants-descriptions {
+	display: flex;
+	flex-direction: column;
+}
+
+.plants-descriptions img {
+	border-radius: 2px;
+	margin-top: 2em;
+	width: 50%;
+}
+
+.left-plant-image {
+	margin-left: 2em;
+}
+
+.right-plant-image {
+	margin-right: 2em;
+}
+
+.plant-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.plant-details {
+	align-items: center;
+}
+
+.plant-title {
+	font-family: Baskervville, serif;
+	margin: 1em auto 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.elephant-foot {
+	margin: 0 auto;
+}
+
+.plant-description-text {
+	margin: 1em 2em 0 2em;
+	line-height: 2.0;
+}
+
+.plants-bottom-border {
+	width: 60%;
+	margin: 4em auto 3em auto;
+	border-bottom: 1px solid slategray;
+}
+
+.plants-benefits {
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 2em;
+	border-bottom: 1px solid slategray;
+}
+
+.plants-benefits h3 {
+	margin-bottom: -0.5em;
+}
+
+.icon-container {
+	display: flex;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.benefits-icons {
+	font-size: 3rem;
+	margin-right: 2rem;
+	position: relative;
+	top: 0.5em;
+	z-index: 100;
+}
+
+#care-tips {
+	position: relative;
+	top: -2em;
+}
+
+.plants-care-tips {
+	width: 60%;
+	margin: 4.5em auto;
+}
+
+.plants-care-tips li {
+	line-height: 2.0;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#prices {
+	position: relative;
+	top: -2em;
+}
+
+.prices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 6em auto 2em auto;
+	gap: 20px;
+}
+
+.prices img {
+	width: 100%;
+	max-width: 350px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.prices img:hover {
+	cursor: pointer;
+}
+
+.plant-price-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.plant-title-and-price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.prices h3 {
+	font-weight: normal;
+}
+
+.plant-price {
+	font-family: Nunito;
+	font-weight: bold;
+	font-size: 18px;
+	color: #333;
+}
+
+.plant-description {
+	margin-top: -1em;
+	color: #777;
+}
+
+footer {
+	background-color: #e0e0e0;
+	width: 65%;
+	height: 5em;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-text {
+	margin-left: 42em;
+	width: 30%;
+	height: 100%;
+}
+
+.footer-text ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.footer-text li {
+	margin: 0.5em auto 0 auto;
+}
+
+.footer-text a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer-text a:hover {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.footer-text p {
+	display: flex;
+	justify-content: center;
+	font-size: 13px;
+	margin: -0.5em auto 0 auto;
+}
